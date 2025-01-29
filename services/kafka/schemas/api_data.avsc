@@ -1,0 +1,17 @@
+{
+    "type": "record",
+    "doc": "This event captures the geographical coordinates of public buses",
+    "name": "ApiData",
+    "fields": [
+        {"name": "EV", "type": "string", "doc": "Event code"},
+        {"name": "HR", "type": "string", "doc": "Timestamp in yyyyMMddHHmmSS format (UTC-3)"},
+        {"name": "LT", "type": "string", "doc": "Latitude in WGS 84 23S format"},
+        {"name": "LG", "type": "string", "doc": "Longitude in WGS 84 23S format"},
+        {"name": "NV", "type": "string", "doc": "Vehicle number of order"},
+        {"name": "VL", "type": "string", "doc": "Instant vehicle speed (km/h)"},
+        {"name": "NL", "type": "string", "doc": "Line code"},
+        {"name": "DG", "type": "string", "doc": "Vehicle direction in degrees (0-359)"},
+        {"name": "SV", "type": "string", "doc": "Vehicle status. 1: Going, 2: Backing"},
+        {"name": "DT", "type": "string", "doc": "Distance travelled"}
+    ]
+}

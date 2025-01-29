@@ -1,0 +1,4 @@
+env/
+.env
+services/kafka/data
+services/kafka/data/

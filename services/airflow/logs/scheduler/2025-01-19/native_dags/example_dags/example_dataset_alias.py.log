@@ -1,0 +1,256 @@
+[2025-01-19T23:38:59.833+0000] {processor.py:186} INFO - Started process (PID=89) to work on /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_dataset_alias.py
+[2025-01-19T23:38:59.833+0000] {processor.py:914} INFO - Processing file /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_dataset_alias.py for tasks to queue
+[2025-01-19T23:38:59.835+0000] {logging_mixin.py:190} INFO - [2025-01-19T23:38:59.835+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_dataset_alias.py
+[2025-01-19T23:39:07.800+0000] {processor.py:925} INFO - DAG(s) 'dataset_s3_bucket_consumer', 'dataset_alias_example_alias_producer', 'dataset_alias_example_alias_consumer', 'dataset_s3_bucket_producer' retrieved from /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_dataset_alias.py
+[2025-01-19T23:39:08.173+0000] {logging_mixin.py:190} INFO - [2025-01-19T23:39:08.172+0000] {dag.py:3239} INFO - Sync 4 DAGs
+[2025-01-19T23:39:08.207+0000] {logging_mixin.py:190} INFO - [2025-01-19T23:39:08.206+0000] {dag.py:4180} INFO - Setting next_dagrun for dataset_alias_example_alias_consumer to None, run_after=None
+[2025-01-19T23:39:08.211+0000] {logging_mixin.py:190} INFO - [2025-01-19T23:39:08.211+0000] {dag.py:4180} INFO - Setting next_dagrun for dataset_alias_example_alias_producer to None, run_after=None
+[2025-01-19T23:39:08.213+0000] {logging_mixin.py:190} INFO - [2025-01-19T23:39:08.212+0000] {dag.py:4180} INFO - Setting next_dagrun for dataset_s3_bucket_consumer to None, run_after=None
+[2025-01-19T23:39:08.215+0000] {logging_mixin.py:190} INFO - [2025-01-19T23:39:08.214+0000] {dag.py:4180} INFO - Setting next_dagrun for dataset_s3_bucket_producer to None, run_after=None
+[2025-01-19T23:39:08.272+0000] {processor.py:208} INFO - Processing /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_dataset_alias.py took 8.443 seconds
+[2025-01-19T23:39:38.312+0000] {processor.py:186} INFO - Started process (PID=151) to work on /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_dataset_alias.py
+[2025-01-19T23:39:38.314+0000] {processor.py:914} INFO - Processing file /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_dataset_alias.py for tasks to queue
+[2025-01-19T23:39:38.315+0000] {logging_mixin.py:190} INFO - [2025-01-19T23:39:38.315+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_dataset_alias.py
+[2025-01-19T23:39:38.968+0000] {processor.py:925} INFO - DAG(s) 'dataset_s3_bucket_producer', 'dataset_alias_example_alias_consumer', 'dataset_s3_bucket_consumer', 'dataset_alias_example_alias_producer' retrieved from /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_dataset_alias.py
+[2025-01-19T23:39:38.986+0000] {logging_mixin.py:190} INFO - [2025-01-19T23:39:38.984+0000] {dag.py:3239} INFO - Sync 4 DAGs
+[2025-01-19T23:39:39.001+0000] {logging_mixin.py:190} INFO - [2025-01-19T23:39:39.001+0000] {dag.py:4180} INFO - Setting next_dagrun for dataset_alias_example_alias_consumer to None, run_after=None
+[2025-01-19T23:39:39.003+0000] {logging_mixin.py:190} INFO - [2025-01-19T23:39:39.003+0000] {dag.py:4180} INFO - Setting next_dagrun for dataset_alias_example_alias_producer to None, run_after=None
+[2025-01-19T23:39:39.004+0000] {logging_mixin.py:190} INFO - [2025-01-19T23:39:39.004+0000] {dag.py:4180} INFO - Setting next_dagrun for dataset_s3_bucket_consumer to None, run_after=None
+[2025-01-19T23:39:39.005+0000] {logging_mixin.py:190} INFO - [2025-01-19T23:39:39.005+0000] {dag.py:4180} INFO - Setting next_dagrun for dataset_s3_bucket_producer to None, run_after=None
+[2025-01-19T23:39:39.019+0000] {processor.py:208} INFO - Processing /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_dataset_alias.py took 0.712 seconds
+[2025-01-19T23:40:09.713+0000] {processor.py:186} INFO - Started process (PID=215) to work on /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_dataset_alias.py
+[2025-01-19T23:40:09.715+0000] {processor.py:914} INFO - Processing file /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_dataset_alias.py for tasks to queue
+[2025-01-19T23:40:09.717+0000] {logging_mixin.py:190} INFO - [2025-01-19T23:40:09.717+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_dataset_alias.py
+[2025-01-19T23:40:10.889+0000] {processor.py:925} INFO - DAG(s) 'dataset_s3_bucket_producer', 'dataset_alias_example_alias_consumer', 'dataset_alias_example_alias_producer', 'dataset_s3_bucket_consumer' retrieved from /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_dataset_alias.py
+[2025-01-19T23:40:10.915+0000] {logging_mixin.py:190} INFO - [2025-01-19T23:40:10.909+0000] {dag.py:3239} INFO - Sync 4 DAGs
+[2025-01-19T23:40:10.934+0000] {logging_mixin.py:190} INFO - [2025-01-19T23:40:10.934+0000] {dag.py:4180} INFO - Setting next_dagrun for dataset_alias_example_alias_consumer to None, run_after=None
+[2025-01-19T23:40:10.937+0000] {logging_mixin.py:190} INFO - [2025-01-19T23:40:10.937+0000] {dag.py:4180} INFO - Setting next_dagrun for dataset_alias_example_alias_producer to None, run_after=None
+[2025-01-19T23:40:10.939+0000] {logging_mixin.py:190} INFO - [2025-01-19T23:40:10.939+0000] {dag.py:4180} INFO - Setting next_dagrun for dataset_s3_bucket_consumer to None, run_after=None
+[2025-01-19T23:40:10.941+0000] {logging_mixin.py:190} INFO - [2025-01-19T23:40:10.940+0000] {dag.py:4180} INFO - Setting next_dagrun for dataset_s3_bucket_producer to None, run_after=None
+[2025-01-19T23:40:10.962+0000] {processor.py:208} INFO - Processing /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_dataset_alias.py took 1.253 seconds
+[2025-01-19T23:40:41.502+0000] {processor.py:186} INFO - Started process (PID=278) to work on /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_dataset_alias.py
+[2025-01-19T23:40:41.504+0000] {processor.py:914} INFO - Processing file /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_dataset_alias.py for tasks to queue
+[2025-01-19T23:40:41.506+0000] {logging_mixin.py:190} INFO - [2025-01-19T23:40:41.506+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_dataset_alias.py
+[2025-01-19T23:40:42.514+0000] {processor.py:925} INFO - DAG(s) 'dataset_alias_example_alias_producer', 'dataset_alias_example_alias_consumer', 'dataset_s3_bucket_producer', 'dataset_s3_bucket_consumer' retrieved from /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_dataset_alias.py
+[2025-01-19T23:40:42.537+0000] {logging_mixin.py:190} INFO - [2025-01-19T23:40:42.536+0000] {dag.py:3239} INFO - Sync 4 DAGs
+[2025-01-19T23:40:42.560+0000] {logging_mixin.py:190} INFO - [2025-01-19T23:40:42.559+0000] {dag.py:4180} INFO - Setting next_dagrun for dataset_alias_example_alias_consumer to None, run_after=None
+[2025-01-19T23:40:42.562+0000] {logging_mixin.py:190} INFO - [2025-01-19T23:40:42.562+0000] {dag.py:4180} INFO - Setting next_dagrun for dataset_alias_example_alias_producer to None, run_after=None
+[2025-01-19T23:40:42.563+0000] {logging_mixin.py:190} INFO - [2025-01-19T23:40:42.563+0000] {dag.py:4180} INFO - Setting next_dagrun for dataset_s3_bucket_consumer to None, run_after=None
+[2025-01-19T23:40:42.564+0000] {logging_mixin.py:190} INFO - [2025-01-19T23:40:42.564+0000] {dag.py:4180} INFO - Setting next_dagrun for dataset_s3_bucket_producer to None, run_after=None
+[2025-01-19T23:40:42.587+0000] {processor.py:208} INFO - Processing /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_dataset_alias.py took 1.091 seconds
+[2025-01-19T23:41:12.867+0000] {processor.py:186} INFO - Started process (PID=341) to work on /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_dataset_alias.py
+[2025-01-19T23:41:12.868+0000] {processor.py:914} INFO - Processing file /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_dataset_alias.py for tasks to queue
+[2025-01-19T23:41:12.870+0000] {logging_mixin.py:190} INFO - [2025-01-19T23:41:12.870+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_dataset_alias.py
+[2025-01-19T23:41:13.687+0000] {processor.py:925} INFO - DAG(s) 'dataset_alias_example_alias_consumer', 'dataset_s3_bucket_producer', 'dataset_s3_bucket_consumer', 'dataset_alias_example_alias_producer' retrieved from /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_dataset_alias.py
+[2025-01-19T23:41:13.706+0000] {logging_mixin.py:190} INFO - [2025-01-19T23:41:13.705+0000] {dag.py:3239} INFO - Sync 4 DAGs
+[2025-01-19T23:41:13.724+0000] {logging_mixin.py:190} INFO - [2025-01-19T23:41:13.724+0000] {dag.py:4180} INFO - Setting next_dagrun for dataset_alias_example_alias_consumer to None, run_after=None
+[2025-01-19T23:41:13.726+0000] {logging_mixin.py:190} INFO - [2025-01-19T23:41:13.726+0000] {dag.py:4180} INFO - Setting next_dagrun for dataset_alias_example_alias_producer to None, run_after=None
+[2025-01-19T23:41:13.728+0000] {logging_mixin.py:190} INFO - [2025-01-19T23:41:13.727+0000] {dag.py:4180} INFO - Setting next_dagrun for dataset_s3_bucket_consumer to None, run_after=None
+[2025-01-19T23:41:13.729+0000] {logging_mixin.py:190} INFO - [2025-01-19T23:41:13.729+0000] {dag.py:4180} INFO - Setting next_dagrun for dataset_s3_bucket_producer to None, run_after=None
+[2025-01-19T23:41:13.750+0000] {processor.py:208} INFO - Processing /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_dataset_alias.py took 0.888 seconds
+[2025-01-19T23:41:44.373+0000] {processor.py:186} INFO - Started process (PID=404) to work on /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_dataset_alias.py
+[2025-01-19T23:41:44.374+0000] {processor.py:914} INFO - Processing file /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_dataset_alias.py for tasks to queue
+[2025-01-19T23:41:44.376+0000] {logging_mixin.py:190} INFO - [2025-01-19T23:41:44.375+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_dataset_alias.py
+[2025-01-19T23:41:45.314+0000] {processor.py:925} INFO - DAG(s) 'dataset_alias_example_alias_consumer', 'dataset_s3_bucket_producer', 'dataset_alias_example_alias_producer', 'dataset_s3_bucket_consumer' retrieved from /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_dataset_alias.py
+[2025-01-19T23:41:45.339+0000] {logging_mixin.py:190} INFO - [2025-01-19T23:41:45.335+0000] {dag.py:3239} INFO - Sync 4 DAGs
+[2025-01-19T23:41:45.362+0000] {logging_mixin.py:190} INFO - [2025-01-19T23:41:45.361+0000] {dag.py:4180} INFO - Setting next_dagrun for dataset_alias_example_alias_consumer to None, run_after=None
+[2025-01-19T23:41:45.365+0000] {logging_mixin.py:190} INFO - [2025-01-19T23:41:45.365+0000] {dag.py:4180} INFO - Setting next_dagrun for dataset_alias_example_alias_producer to None, run_after=None
+[2025-01-19T23:41:45.367+0000] {logging_mixin.py:190} INFO - [2025-01-19T23:41:45.367+0000] {dag.py:4180} INFO - Setting next_dagrun for dataset_s3_bucket_consumer to None, run_after=None
+[2025-01-19T23:41:45.368+0000] {logging_mixin.py:190} INFO - [2025-01-19T23:41:45.368+0000] {dag.py:4180} INFO - Setting next_dagrun for dataset_s3_bucket_producer to None, run_after=None
+[2025-01-19T23:41:45.392+0000] {processor.py:208} INFO - Processing /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_dataset_alias.py took 1.024 seconds
+[2025-01-19T23:42:16.011+0000] {processor.py:186} INFO - Started process (PID=467) to work on /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_dataset_alias.py
+[2025-01-19T23:42:16.012+0000] {processor.py:914} INFO - Processing file /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_dataset_alias.py for tasks to queue
+[2025-01-19T23:42:16.014+0000] {logging_mixin.py:190} INFO - [2025-01-19T23:42:16.014+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_dataset_alias.py
+[2025-01-19T23:42:16.979+0000] {processor.py:925} INFO - DAG(s) 'dataset_alias_example_alias_producer', 'dataset_s3_bucket_producer', 'dataset_alias_example_alias_consumer', 'dataset_s3_bucket_consumer' retrieved from /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_dataset_alias.py
+[2025-01-19T23:42:17.005+0000] {logging_mixin.py:190} INFO - [2025-01-19T23:42:17.002+0000] {dag.py:3239} INFO - Sync 4 DAGs
+[2025-01-19T23:42:17.030+0000] {logging_mixin.py:190} INFO - [2025-01-19T23:42:17.030+0000] {dag.py:4180} INFO - Setting next_dagrun for dataset_alias_example_alias_consumer to None, run_after=None
+[2025-01-19T23:42:17.033+0000] {logging_mixin.py:190} INFO - [2025-01-19T23:42:17.032+0000] {dag.py:4180} INFO - Setting next_dagrun for dataset_alias_example_alias_producer to None, run_after=None
+[2025-01-19T23:42:17.034+0000] {logging_mixin.py:190} INFO - [2025-01-19T23:42:17.034+0000] {dag.py:4180} INFO - Setting next_dagrun for dataset_s3_bucket_consumer to None, run_after=None
+[2025-01-19T23:42:17.036+0000] {logging_mixin.py:190} INFO - [2025-01-19T23:42:17.036+0000] {dag.py:4180} INFO - Setting next_dagrun for dataset_s3_bucket_producer to None, run_after=None
+[2025-01-19T23:42:17.062+0000] {processor.py:208} INFO - Processing /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_dataset_alias.py took 1.056 seconds
+[2025-01-19T23:47:04.911+0000] {processor.py:186} INFO - Started process (PID=95) to work on /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_dataset_alias.py
+[2025-01-19T23:47:04.914+0000] {processor.py:914} INFO - Processing file /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_dataset_alias.py for tasks to queue
+[2025-01-19T23:47:04.922+0000] {logging_mixin.py:190} INFO - [2025-01-19T23:47:04.921+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_dataset_alias.py
+[2025-01-19T23:47:07.165+0000] {processor.py:925} INFO - DAG(s) 'dataset_alias_example_alias_consumer', 'dataset_s3_bucket_consumer', 'dataset_alias_example_alias_producer', 'dataset_s3_bucket_producer' retrieved from /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_dataset_alias.py
+[2025-01-19T23:47:07.231+0000] {logging_mixin.py:190} INFO - [2025-01-19T23:47:07.230+0000] {dag.py:3239} INFO - Sync 4 DAGs
+[2025-01-19T23:47:07.272+0000] {logging_mixin.py:190} INFO - [2025-01-19T23:47:07.272+0000] {dag.py:4180} INFO - Setting next_dagrun for dataset_alias_example_alias_consumer to None, run_after=None
+[2025-01-19T23:47:07.278+0000] {logging_mixin.py:190} INFO - [2025-01-19T23:47:07.277+0000] {dag.py:4180} INFO - Setting next_dagrun for dataset_alias_example_alias_producer to None, run_after=None
+[2025-01-19T23:47:07.280+0000] {logging_mixin.py:190} INFO - [2025-01-19T23:47:07.280+0000] {dag.py:4180} INFO - Setting next_dagrun for dataset_s3_bucket_consumer to None, run_after=None
+[2025-01-19T23:47:07.283+0000] {logging_mixin.py:190} INFO - [2025-01-19T23:47:07.283+0000] {dag.py:4180} INFO - Setting next_dagrun for dataset_s3_bucket_producer to None, run_after=None
+[2025-01-19T23:47:07.332+0000] {processor.py:208} INFO - Processing /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_dataset_alias.py took 2.434 seconds
+[2025-01-19T23:47:38.043+0000] {processor.py:186} INFO - Started process (PID=164) to work on /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_dataset_alias.py
+[2025-01-19T23:47:38.044+0000] {processor.py:914} INFO - Processing file /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_dataset_alias.py for tasks to queue
+[2025-01-19T23:47:38.046+0000] {logging_mixin.py:190} INFO - [2025-01-19T23:47:38.046+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_dataset_alias.py
+[2025-01-19T23:47:39.005+0000] {processor.py:925} INFO - DAG(s) 'dataset_s3_bucket_producer', 'dataset_s3_bucket_consumer', 'dataset_alias_example_alias_consumer', 'dataset_alias_example_alias_producer' retrieved from /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_dataset_alias.py
+[2025-01-19T23:47:39.024+0000] {logging_mixin.py:190} INFO - [2025-01-19T23:47:39.024+0000] {dag.py:3239} INFO - Sync 4 DAGs
+[2025-01-19T23:47:39.039+0000] {logging_mixin.py:190} INFO - [2025-01-19T23:47:39.039+0000] {dag.py:4180} INFO - Setting next_dagrun for dataset_alias_example_alias_consumer to None, run_after=None
+[2025-01-19T23:47:39.041+0000] {logging_mixin.py:190} INFO - [2025-01-19T23:47:39.041+0000] {dag.py:4180} INFO - Setting next_dagrun for dataset_alias_example_alias_producer to None, run_after=None
+[2025-01-19T23:47:39.042+0000] {logging_mixin.py:190} INFO - [2025-01-19T23:47:39.042+0000] {dag.py:4180} INFO - Setting next_dagrun for dataset_s3_bucket_consumer to None, run_after=None
+[2025-01-19T23:47:39.043+0000] {logging_mixin.py:190} INFO - [2025-01-19T23:47:39.043+0000] {dag.py:4180} INFO - Setting next_dagrun for dataset_s3_bucket_producer to None, run_after=None
+[2025-01-19T23:47:39.060+0000] {processor.py:208} INFO - Processing /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_dataset_alias.py took 1.021 seconds
+[2025-01-19T23:50:07.981+0000] {processor.py:186} INFO - Started process (PID=199) to work on /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_dataset_alias.py
+[2025-01-19T23:50:07.983+0000] {processor.py:914} INFO - Processing file /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_dataset_alias.py for tasks to queue
+[2025-01-19T23:50:07.987+0000] {logging_mixin.py:190} INFO - [2025-01-19T23:50:07.986+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_dataset_alias.py
+[2025-01-19T23:50:08.912+0000] {processor.py:925} INFO - DAG(s) 'dataset_alias_example_alias_producer', 'dataset_alias_example_alias_consumer', 'dataset_s3_bucket_consumer', 'dataset_s3_bucket_producer' retrieved from /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_dataset_alias.py
+[2025-01-19T23:50:08.931+0000] {logging_mixin.py:190} INFO - [2025-01-19T23:50:08.931+0000] {dag.py:3239} INFO - Sync 4 DAGs
+[2025-01-19T23:50:08.949+0000] {logging_mixin.py:190} INFO - [2025-01-19T23:50:08.949+0000] {dag.py:4180} INFO - Setting next_dagrun for dataset_alias_example_alias_consumer to None, run_after=None
+[2025-01-19T23:50:08.951+0000] {logging_mixin.py:190} INFO - [2025-01-19T23:50:08.951+0000] {dag.py:4180} INFO - Setting next_dagrun for dataset_alias_example_alias_producer to None, run_after=None
+[2025-01-19T23:50:08.953+0000] {logging_mixin.py:190} INFO - [2025-01-19T23:50:08.953+0000] {dag.py:4180} INFO - Setting next_dagrun for dataset_s3_bucket_consumer to None, run_after=None
+[2025-01-19T23:50:08.954+0000] {logging_mixin.py:190} INFO - [2025-01-19T23:50:08.954+0000] {dag.py:4180} INFO - Setting next_dagrun for dataset_s3_bucket_producer to None, run_after=None
+[2025-01-19T23:50:08.972+0000] {processor.py:208} INFO - Processing /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_dataset_alias.py took 0.997 seconds
+[2025-01-19T23:50:39.047+0000] {processor.py:186} INFO - Started process (PID=267) to work on /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_dataset_alias.py
+[2025-01-19T23:50:39.048+0000] {processor.py:914} INFO - Processing file /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_dataset_alias.py for tasks to queue
+[2025-01-19T23:50:39.050+0000] {logging_mixin.py:190} INFO - [2025-01-19T23:50:39.050+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_dataset_alias.py
+[2025-01-19T23:50:39.502+0000] {processor.py:925} INFO - DAG(s) 'dataset_alias_example_alias_consumer', 'dataset_alias_example_alias_producer', 'dataset_s3_bucket_producer', 'dataset_s3_bucket_consumer' retrieved from /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_dataset_alias.py
+[2025-01-19T23:50:39.542+0000] {logging_mixin.py:190} INFO - [2025-01-19T23:50:39.541+0000] {dag.py:3239} INFO - Sync 4 DAGs
+[2025-01-19T23:50:39.571+0000] {logging_mixin.py:190} INFO - [2025-01-19T23:50:39.571+0000] {dag.py:4180} INFO - Setting next_dagrun for dataset_alias_example_alias_consumer to None, run_after=None
+[2025-01-19T23:50:39.575+0000] {logging_mixin.py:190} INFO - [2025-01-19T23:50:39.574+0000] {dag.py:4180} INFO - Setting next_dagrun for dataset_alias_example_alias_producer to None, run_after=None
+[2025-01-19T23:50:39.576+0000] {logging_mixin.py:190} INFO - [2025-01-19T23:50:39.576+0000] {dag.py:4180} INFO - Setting next_dagrun for dataset_s3_bucket_consumer to None, run_after=None
+[2025-01-19T23:50:39.577+0000] {logging_mixin.py:190} INFO - [2025-01-19T23:50:39.577+0000] {dag.py:4180} INFO - Setting next_dagrun for dataset_s3_bucket_producer to None, run_after=None
+[2025-01-19T23:50:39.605+0000] {processor.py:208} INFO - Processing /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_dataset_alias.py took 0.563 seconds
+[2025-01-19T23:51:11.557+0000] {processor.py:186} INFO - Started process (PID=334) to work on /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_dataset_alias.py
+[2025-01-19T23:51:11.560+0000] {processor.py:914} INFO - Processing file /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_dataset_alias.py for tasks to queue
+[2025-01-19T23:51:11.566+0000] {logging_mixin.py:190} INFO - [2025-01-19T23:51:11.565+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_dataset_alias.py
+[2025-01-19T23:51:12.909+0000] {processor.py:925} INFO - DAG(s) 'dataset_s3_bucket_consumer', 'dataset_alias_example_alias_consumer', 'dataset_alias_example_alias_producer', 'dataset_s3_bucket_producer' retrieved from /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_dataset_alias.py
+[2025-01-19T23:51:12.970+0000] {logging_mixin.py:190} INFO - [2025-01-19T23:51:12.969+0000] {dag.py:3239} INFO - Sync 4 DAGs
+[2025-01-19T23:51:13.024+0000] {logging_mixin.py:190} INFO - [2025-01-19T23:51:13.023+0000] {dag.py:4180} INFO - Setting next_dagrun for dataset_alias_example_alias_consumer to None, run_after=None
+[2025-01-19T23:51:13.029+0000] {logging_mixin.py:190} INFO - [2025-01-19T23:51:13.029+0000] {dag.py:4180} INFO - Setting next_dagrun for dataset_alias_example_alias_producer to None, run_after=None
+[2025-01-19T23:51:13.033+0000] {logging_mixin.py:190} INFO - [2025-01-19T23:51:13.032+0000] {dag.py:4180} INFO - Setting next_dagrun for dataset_s3_bucket_consumer to None, run_after=None
+[2025-01-19T23:51:13.037+0000] {logging_mixin.py:190} INFO - [2025-01-19T23:51:13.037+0000] {dag.py:4180} INFO - Setting next_dagrun for dataset_s3_bucket_producer to None, run_after=None
+[2025-01-19T23:51:13.088+0000] {processor.py:208} INFO - Processing /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_dataset_alias.py took 1.541 seconds
+[2025-01-19T23:51:44.681+0000] {processor.py:186} INFO - Started process (PID=401) to work on /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_dataset_alias.py
+[2025-01-19T23:51:44.683+0000] {processor.py:914} INFO - Processing file /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_dataset_alias.py for tasks to queue
+[2025-01-19T23:51:44.686+0000] {logging_mixin.py:190} INFO - [2025-01-19T23:51:44.685+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_dataset_alias.py
+[2025-01-19T23:52:16.563+0000] {logging_mixin.py:190} INFO - [2025-01-19T23:52:15.184+0000] {timeout.py:68} ERROR - Process timed out, PID: 401
+[2025-01-19T23:54:02.222+0000] {logging_mixin.py:190} INFO - [2025-01-19T23:52:25.563+0000] {dagbag.py:387} ERROR - Failed to import: /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_dataset_alias.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_dataset_alias.py", line 52, in <module>
+    @task(outlets=[Dataset("s3://bucket/my-task")])
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<attrs generated init airflow.datasets.Dataset>", line 3, in __init__
+    _setattr('uri', __attr_converter_uri(uri))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/datasets/__init__.py", line 108, in _sanitize_uri
+    if (normalizer := _get_uri_normalizer(normalized_scheme)) is not None:
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/datasets/__init__.py", line 58, in _get_uri_normalizer
+    return ProvidersManager().dataset_uri_handlers.get(scheme)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/providers_manager.py", line 1334, in dataset_uri_handlers
+    self.initialize_providers_dataset_uri_resources()
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/providers_manager.py", line 384, in wrapped_function
+    func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/providers_manager.py", line 532, in initialize_providers_dataset_uri_resources
+    self._discover_dataset_uri_resources()
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/providers_manager.py", line 915, in _discover_dataset_uri_resources
+    _safe_register_resource(
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/providers_manager.py", line 903, in _safe_register_resource
+    _correctness_check(provider_package_name, resource_path, provider)
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/providers_manager.py", line 327, in _correctness_check
+    imported_class = import_string(class_name)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/module_loading.py", line 39, in import_string
+    module = import_module(module_path)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/importlib/__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/providers/google/assets/gcs.py", line 21, in <module>
+    from airflow.providers.google.cloud.hooks.gcs import _parse_gcs_url
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/providers/google/cloud/hooks/gcs.py", line 41, in <module>
+    from google.cloud import storage  # type: ignore[attr-defined]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/google/cloud/storage/__init__.py", line 35, in <module>
+    from google.cloud.storage.batch import Batch
+  File "/home/airflow/.local/lib/python3.12/site-packages/google/cloud/storage/batch.py", line 44, in <module>
+    from google.cloud.storage._http import Connection
+  File "/home/airflow/.local/lib/python3.12/site-packages/google/cloud/storage/_http.py", line 21, in <module>
+    from google.cloud.storage._opentelemetry_tracing import create_trace_span
+  File "/home/airflow/.local/lib/python3.12/site-packages/google/cloud/storage/_opentelemetry_tracing.py", line 37, in <module>
+    from opentelemetry import trace
+  File "/home/airflow/.local/lib/python3.12/site-packages/opentelemetry/trace/__init__.py", line 86, in <module>
+    from opentelemetry import context as context_api
+  File "/home/airflow/.local/lib/python3.12/site-packages/opentelemetry/context/__init__.py", line 69, in <module>
+    _RUNTIME_CONTEXT = _load_runtime_context()
+                       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/opentelemetry/context/__init__.py", line 47, in _load_runtime_context
+    entry_points(  # type: ignore
+  File "/home/airflow/.local/lib/python3.12/site-packages/importlib_metadata/__init__.py", line 952, in entry_points
+    return EntryPoints(eps).select(**params)
+           ^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/importlib_metadata/__init__.py", line 950, in <genexpr>
+    dist.entry_points for dist in _unique(distributions())
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/importlib_metadata/_itertools.py", line 15, in unique_everseen
+    for element in iterable:
+                   ^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/importlib_metadata/__init__.py", line 369, in __new__
+    name for subclass in inspect.getmro(cls) for name in vars(subclass)
+    ^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/timeout.py", line 69, in handle_timeout
+    raise AirflowTaskTimeout(self.error_message)
+airflow.exceptions.AirflowTaskTimeout: DagBag import timeout for /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_dataset_alias.py after 30.0s.
+Please take a look at these docs to improve your DAG import time:
+* https://airflow.apache.org/docs/apache-airflow/2.10.4/best-practices.html#top-level-python-code
+* https://airflow.apache.org/docs/apache-airflow/2.10.4/best-practices.html#reducing-dag-complexity, PID: 401
+[2025-01-19T23:54:02.346+0000] {processor.py:927} WARNING - No viable dags retrieved from /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_dataset_alias.py
+[2025-01-19T23:57:23.415+0000] {processor.py:186} INFO - Started process (PID=482) to work on /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_dataset_alias.py
+[2025-01-19T23:57:23.418+0000] {processor.py:914} INFO - Processing file /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_dataset_alias.py for tasks to queue
+[2025-01-19T23:57:23.421+0000] {logging_mixin.py:190} INFO - [2025-01-19T23:57:23.420+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_dataset_alias.py
+[2025-01-19T23:57:24.686+0000] {processor.py:925} INFO - DAG(s) 'dataset_s3_bucket_producer', 'dataset_alias_example_alias_producer', 'dataset_s3_bucket_consumer', 'dataset_alias_example_alias_consumer' retrieved from /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_dataset_alias.py
+[2025-01-19T23:57:25.136+0000] {logging_mixin.py:190} INFO - [2025-01-19T23:57:25.135+0000] {dag.py:3239} INFO - Sync 4 DAGs
+[2025-01-19T23:57:25.187+0000] {logging_mixin.py:190} INFO - [2025-01-19T23:57:25.186+0000] {dag.py:4180} INFO - Setting next_dagrun for dataset_alias_example_alias_consumer to None, run_after=None
+[2025-01-19T23:57:25.198+0000] {logging_mixin.py:190} INFO - [2025-01-19T23:57:25.198+0000] {dag.py:4180} INFO - Setting next_dagrun for dataset_alias_example_alias_producer to None, run_after=None
+[2025-01-19T23:57:25.202+0000] {logging_mixin.py:190} INFO - [2025-01-19T23:57:25.202+0000] {dag.py:4180} INFO - Setting next_dagrun for dataset_s3_bucket_consumer to None, run_after=None
+[2025-01-19T23:57:25.206+0000] {logging_mixin.py:190} INFO - [2025-01-19T23:57:25.205+0000] {dag.py:4180} INFO - Setting next_dagrun for dataset_s3_bucket_producer to None, run_after=None
+[2025-01-19T23:57:25.271+0000] {processor.py:208} INFO - Processing /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_dataset_alias.py took 1.865 seconds
+[2025-01-19T23:57:56.236+0000] {processor.py:186} INFO - Started process (PID=548) to work on /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_dataset_alias.py
+[2025-01-19T23:57:56.240+0000] {processor.py:914} INFO - Processing file /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_dataset_alias.py for tasks to queue
+[2025-01-19T23:57:56.242+0000] {logging_mixin.py:190} INFO - [2025-01-19T23:57:56.241+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_dataset_alias.py
+[2025-01-19T23:57:56.871+0000] {processor.py:925} INFO - DAG(s) 'dataset_s3_bucket_consumer', 'dataset_alias_example_alias_consumer', 'dataset_alias_example_alias_producer', 'dataset_s3_bucket_producer' retrieved from /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_dataset_alias.py
+[2025-01-19T23:57:56.900+0000] {logging_mixin.py:190} INFO - [2025-01-19T23:57:56.899+0000] {dag.py:3239} INFO - Sync 4 DAGs
+[2025-01-19T23:57:56.924+0000] {logging_mixin.py:190} INFO - [2025-01-19T23:57:56.924+0000] {dag.py:4180} INFO - Setting next_dagrun for dataset_alias_example_alias_consumer to None, run_after=None
+[2025-01-19T23:57:56.927+0000] {logging_mixin.py:190} INFO - [2025-01-19T23:57:56.927+0000] {dag.py:4180} INFO - Setting next_dagrun for dataset_alias_example_alias_producer to None, run_after=None
+[2025-01-19T23:57:56.929+0000] {logging_mixin.py:190} INFO - [2025-01-19T23:57:56.929+0000] {dag.py:4180} INFO - Setting next_dagrun for dataset_s3_bucket_consumer to None, run_after=None
+[2025-01-19T23:57:56.931+0000] {logging_mixin.py:190} INFO - [2025-01-19T23:57:56.931+0000] {dag.py:4180} INFO - Setting next_dagrun for dataset_s3_bucket_producer to None, run_after=None
+[2025-01-19T23:57:56.965+0000] {processor.py:208} INFO - Processing /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_dataset_alias.py took 0.737 seconds
+[2025-01-19T23:58:27.535+0000] {processor.py:186} INFO - Started process (PID=613) to work on /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_dataset_alias.py
+[2025-01-19T23:58:27.536+0000] {processor.py:914} INFO - Processing file /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_dataset_alias.py for tasks to queue
+[2025-01-19T23:58:27.537+0000] {logging_mixin.py:190} INFO - [2025-01-19T23:58:27.537+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_dataset_alias.py
+[2025-01-19T23:58:27.957+0000] {processor.py:925} INFO - DAG(s) 'dataset_alias_example_alias_consumer', 'dataset_alias_example_alias_producer', 'dataset_s3_bucket_producer', 'dataset_s3_bucket_consumer' retrieved from /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_dataset_alias.py
+[2025-01-19T23:58:27.980+0000] {logging_mixin.py:190} INFO - [2025-01-19T23:58:27.979+0000] {dag.py:3239} INFO - Sync 4 DAGs
+[2025-01-19T23:58:27.998+0000] {logging_mixin.py:190} INFO - [2025-01-19T23:58:27.997+0000] {dag.py:4180} INFO - Setting next_dagrun for dataset_alias_example_alias_consumer to None, run_after=None
+[2025-01-19T23:58:28.000+0000] {logging_mixin.py:190} INFO - [2025-01-19T23:58:28.000+0000] {dag.py:4180} INFO - Setting next_dagrun for dataset_alias_example_alias_producer to None, run_after=None
+[2025-01-19T23:58:28.001+0000] {logging_mixin.py:190} INFO - [2025-01-19T23:58:28.001+0000] {dag.py:4180} INFO - Setting next_dagrun for dataset_s3_bucket_consumer to None, run_after=None
+[2025-01-19T23:58:28.002+0000] {logging_mixin.py:190} INFO - [2025-01-19T23:58:28.002+0000] {dag.py:4180} INFO - Setting next_dagrun for dataset_s3_bucket_producer to None, run_after=None
+[2025-01-19T23:58:28.027+0000] {processor.py:208} INFO - Processing /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_dataset_alias.py took 0.497 seconds
+[2025-01-19T23:58:58.059+0000] {processor.py:186} INFO - Started process (PID=676) to work on /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_dataset_alias.py
+[2025-01-19T23:58:58.060+0000] {processor.py:914} INFO - Processing file /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_dataset_alias.py for tasks to queue
+[2025-01-19T23:58:58.062+0000] {logging_mixin.py:190} INFO - [2025-01-19T23:58:58.061+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_dataset_alias.py
+[2025-01-19T23:58:58.809+0000] {processor.py:925} INFO - DAG(s) 'dataset_s3_bucket_consumer', 'dataset_s3_bucket_producer', 'dataset_alias_example_alias_producer', 'dataset_alias_example_alias_consumer' retrieved from /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_dataset_alias.py
+[2025-01-19T23:58:58.855+0000] {logging_mixin.py:190} INFO - [2025-01-19T23:58:58.853+0000] {dag.py:3239} INFO - Sync 4 DAGs
+[2025-01-19T23:58:58.898+0000] {logging_mixin.py:190} INFO - [2025-01-19T23:58:58.898+0000] {dag.py:4180} INFO - Setting next_dagrun for dataset_alias_example_alias_consumer to None, run_after=None
+[2025-01-19T23:58:58.903+0000] {logging_mixin.py:190} INFO - [2025-01-19T23:58:58.903+0000] {dag.py:4180} INFO - Setting next_dagrun for dataset_alias_example_alias_producer to None, run_after=None
+[2025-01-19T23:58:58.907+0000] {logging_mixin.py:190} INFO - [2025-01-19T23:58:58.907+0000] {dag.py:4180} INFO - Setting next_dagrun for dataset_s3_bucket_consumer to None, run_after=None
+[2025-01-19T23:58:58.911+0000] {logging_mixin.py:190} INFO - [2025-01-19T23:58:58.911+0000] {dag.py:4180} INFO - Setting next_dagrun for dataset_s3_bucket_producer to None, run_after=None
+[2025-01-19T23:58:58.961+0000] {processor.py:208} INFO - Processing /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_dataset_alias.py took 0.908 seconds
+[2025-01-19T23:59:29.432+0000] {processor.py:186} INFO - Started process (PID=741) to work on /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_dataset_alias.py
+[2025-01-19T23:59:29.434+0000] {processor.py:914} INFO - Processing file /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_dataset_alias.py for tasks to queue
+[2025-01-19T23:59:29.435+0000] {logging_mixin.py:190} INFO - [2025-01-19T23:59:29.435+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_dataset_alias.py
+[2025-01-19T23:59:29.841+0000] {processor.py:925} INFO - DAG(s) 'dataset_alias_example_alias_producer', 'dataset_s3_bucket_consumer', 'dataset_alias_example_alias_consumer', 'dataset_s3_bucket_producer' retrieved from /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_dataset_alias.py
+[2025-01-19T23:59:29.857+0000] {logging_mixin.py:190} INFO - [2025-01-19T23:59:29.856+0000] {dag.py:3239} INFO - Sync 4 DAGs
+[2025-01-19T23:59:29.871+0000] {logging_mixin.py:190} INFO - [2025-01-19T23:59:29.871+0000] {dag.py:4180} INFO - Setting next_dagrun for dataset_alias_example_alias_consumer to None, run_after=None
+[2025-01-19T23:59:29.873+0000] {logging_mixin.py:190} INFO - [2025-01-19T23:59:29.873+0000] {dag.py:4180} INFO - Setting next_dagrun for dataset_alias_example_alias_producer to None, run_after=None
+[2025-01-19T23:59:29.874+0000] {logging_mixin.py:190} INFO - [2025-01-19T23:59:29.874+0000] {dag.py:4180} INFO - Setting next_dagrun for dataset_s3_bucket_consumer to None, run_after=None
+[2025-01-19T23:59:29.875+0000] {logging_mixin.py:190} INFO - [2025-01-19T23:59:29.875+0000] {dag.py:4180} INFO - Setting next_dagrun for dataset_s3_bucket_producer to None, run_after=None
+[2025-01-19T23:59:29.892+0000] {processor.py:208} INFO - Processing /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_dataset_alias.py took 0.464 seconds
