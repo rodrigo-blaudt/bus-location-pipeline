@@ -2,3 +2,10 @@ env/
 .env
 services/kafka/data
 services/kafka/data/
+
+services/airflow/logs
+services/airflow/logs/
+services/airflow/logs/dag_processor_manager/dag_processor_manager.log
+
+.services/airflow/logs
+.services/airflow/logs/

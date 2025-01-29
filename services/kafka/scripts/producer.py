@@ -2,6 +2,7 @@ import logging
 import os
 import json
 import httpx
+import time
 
 from confluent_kafka import SerializingProducer
 from confluent_kafka.schema_registry import SchemaRegistryClient
@@ -19,6 +20,7 @@ CONFIG = {
     'INVALID_RECORDS_TOPIC': os.getenv('INVALID_RECORDS_TOPIC', 'invalid_data_topic'),
     'API_URL': os.getenv('API_URL', 'https://temporeal.pbh.gov.br/?param=D'),
     'SCHEMA_PATH': os.getenv('SCHEMA_PATH', 'services/kafka/schemas/api_data.avsc'),
+    'RUN_INTERVAL_SECONDS': os.getenv('RUN_INTERVAL_SECONDS', 20)
 }
 
 schema_registry_conf = {'url': CONFIG['SCHEMA_REGISTRY_URL']}
@@ -89,7 +91,6 @@ def delivery_report(err, msg):
         # logging.info(f'Message delivered to {msg.topic()} [{msg.partition()}] @ offset {msg.offset()}')
 
 
-# data structure validation
 def validate_record(record: dict) -> bool:
     required_fields = ["EV", "HR", "LT", "LG", "NV", "VL", "NL", "DG", "SV", "DT"]
     return all(field in record for field in required_fields)
@@ -117,28 +118,31 @@ def send_to_kafka(data):
         data = [data]
 
     valid_records = [r for r in data if validate_record(r)]
-    print(f"Collected {len(valid_records)} valid records")
+    logging.info(f"Collected {len(valid_records)} valid records")
 
     invalid_records = [r for r in data if not validate_record(r)]
-    print(f"Collected {len(invalid_records)} invalid records")
+    logging.info(f"Collected {len(invalid_records)} invalid records")
 
-    print(f"Sending records to topic: {valid_records_topic}")
+    logging.info(f"Sending records to topic: {valid_records_topic}")
     send_data_topic(producer_valid_data, valid_records_topic, valid_records)
 
-    print(f"Sending records to DLQ topic: {invalid_records_topic}")
+    logging.info(f"Sending records to DLQ topic: {invalid_records_topic}")
     send_data_topic(producer_invalid_data, invalid_records_topic, invalid_records)
 
 
 if __name__ == '__main__':
     try:
-        data = fetch_data_from_api()
-        send_to_kafka(data)
-        print('Data successfully sent to Kafka.')
-    except Exception as e:
-        print(f'Error: {e}')
+        while True:
+            try:
+                data = fetch_data_from_api()
+                send_to_kafka(data)
+                logging.info('Data successfully sent to Kafka.')
+            except Exception as e:
+                logging.error(f'Error: {e}')
 
+            time.sleep(CONFIG['RUN_INTERVAL_SECONDS'])
 
-# dataQuality ideas:
-# latitude should be between -90 and 90
-# longitude should be between -180 and 180
-# vehicle speed should be a positive value
+    except KeyboardInterrupt:
+        logging.info('Script stopped by user')
+    finally:
+        logging.info('Script exiting')
