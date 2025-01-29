@@ -2,6 +2,7 @@ import io
 import json
 import os
 import snappy
+import logging
 
 from datetime import datetime
 from minio import Minio
@@ -10,6 +11,11 @@ from confluent_kafka.serialization import SerializationContext, MessageField
 from confluent_kafka.schema_registry import SchemaRegistryClient
 from confluent_kafka.schema_registry.avro import AvroDeserializer
 
+
+logging.basicConfig(
+    level=logging.INFO,
+    format='%(asctime)s - %(levelname)s - %(message)s'
+)
 
 CONFIG = {
     'CONSUMER_GROUP': os.getenv('CONSUMER_GROUP', 'valid-data-to-storage-consumer-group'),
@@ -38,7 +44,7 @@ def initialize_minio():
 
         return minio_client
     except Exception as e:
-        print(f"Failed to initialize MinIO client: {e}")
+        logging.error(f"Failed to initialize MinIO client: {e}")
         raise
 
 
@@ -54,7 +60,7 @@ def upload_to_minio(minio_client, data, minio_key):
         )
         return result
     except Exception as e:
-        print(f"MinIO upload failed: {e}")
+        logging.error(f"MinIO upload failed: {e}")
         return None
 
 
@@ -66,7 +72,7 @@ def create_object_key(batch_time):
 def flush_batch(batch, last_flush, consumer, minio_client, reason=None):
     try:
         if reason:
-            print(f"Flushing batch due to {reason}")
+            logging.info(f"Flushing batch due to {reason}")
 
         json_lines = '\n'.join([json.dumps(item[1]) for item in batch])
         compressed_data = snappy.compress(json_lines.encode('utf-8'))
@@ -80,14 +86,13 @@ def flush_batch(batch, last_flush, consumer, minio_client, reason=None):
 
             consumer.commit(offsets=[TopicPartition(tp.topic, tp.partition, offset)
                             for tp, offset in offsets.items()])
-            print(f"Uploaded {len(batch)} messages to {CONFIG['MINIO_ENDPOINT']}/{CONFIG['MINIO_BUCKET']}/{minio_key}")
+            logging.info(f"Uploaded {len(batch)} messages to {CONFIG['MINIO_ENDPOINT']}/{CONFIG['MINIO_BUCKET']}/{minio_key}")
             return [], datetime.now()
 
-        print("MinIO upload failed")
         return batch, last_flush
 
     except Exception as e:
-        print(f"Batch processing failed: {e}")
+        logging.error(f"Batch processing failed: {e}")
         return batch, last_flush
 
 
@@ -126,7 +131,7 @@ def main():
                 continue
 
             if msg.error():
-                print(f"Consumer error: {msg.error()}")
+                logging.error(f"Consumer error: {msg.error()}")
                 continue
 
             try:
@@ -134,17 +139,17 @@ def main():
                 if data is not None:
                     batch.append((msg, data))
             except Exception as e:
-                print(f"Deserialization error: {e}")
+                logging.error(f"Deserialization error: {e}")
                 continue
 
             if len(batch) >= batch_size or (datetime.now() - last_flush).seconds >= batch_timeout:
                 batch, last_flush = flush_batch(batch, last_flush, consumer, minio_client)
 
     except KeyboardInterrupt:
-        print("Consumer stopped by user")
+        logging.error("Consumer stopped by user")
     finally:
         if len(batch) > 0:
-            print("Flushing remaining messages...")
+            logging.infologging.error("Flushing remaining messages...")
             flush_batch(batch, last_flush, consumer, minio_client)
         consumer.close()
 

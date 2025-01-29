@@ -9,3 +9,5 @@ services/airflow/logs/dag_processor_manager/dag_processor_manager.log
 
 .services/airflow/logs
 .services/airflow/logs/
+
+teste.py
